@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">ObsidianCast Studio</string>
+    <string name="live_badge">LIVE</string>
+    <string name="rec_badge">REC</string>
+    <string name="program_monitor">PROGRAM</string>
+    <string name="preview_monitor">PREVIEW</string>
+</resources>

@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# Gradle start up script for POSIX generated for ObsidianCast Android Studio Project
+#
+APP_HOME=$( cd "${0%/*}" && pwd -P ) || exit
+DEFAULT_JVM_OPTS='"-Xmx64m" "-Xms64m"'
+CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
+
+if [ -n "$JAVA_HOME" ] ; then
+    JAVACMD="$JAVA_HOME/bin/java"
+else
+    JAVACMD="java"
+fi
+
+if [ ! -f "$CLASSPATH" ]; then
+    echo "Gradle wrapper JAR missing, bootstrapping via local gradle..."
+    gradle wrapper --gradle-version 8.7
+fi
+
+exec "$JAVACMD" $DEFAULT_JVM_OPTS $JAVA_OPTS $GRADLE_OPTS "-Dorg.gradle.appname=$0" -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
